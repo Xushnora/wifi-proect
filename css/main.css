@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f5e5e;
+}
+.content{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  bottom: 50%;
+  left: 10%;
+}
+
+.box-one{
+  position: absolute;
+  bottom: 50%;
+  left: 15%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-top-right-radius: 100%;
+  transform: rotate(-45deg);
+  z-index: 16;
+  outline: 15px solid #5f5e5e;
+}
+
+.box-two{
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-top-right-radius: 100%;
+  transform: rotate(-45deg);
+  outline: 15px solid #5f5e5e;
+  z-index: 12;
+
+  animation: wifi-animation 3s ease infinite both;
+}
+
+.box-three{
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-top-right-radius: 100%;
+  transform: rotate(-45deg);
+  outline: 15px solid #5f5e5e;
+  z-index: 8;
+
+  animation: wifi-animation2 3s ease infinite both;
+}
+
+.box-four{
+    position: absolute;
+    bottom: 50%;
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border-top-right-radius: 100%;
+    transform: rotate(-45deg);
+    z-index: 4;
+
+    animation: wifi-animation3 3s ease infinite both;
+}
+
+@keyframes wifi-animation{
+    0%{
+      background-color: #5f5e5e;
+    }
+    25%{
+      background-color: #afaeaec4;
+    }
+    50%{
+      background-color: #afaeae;
+    }
+    75%{
+      background-color: #afaeaec4;
+    }
+    100%{
+      background-color: #5f5e5e;
+    }
+  }
+
+  @keyframes wifi-animation2{
+    0%{
+      background-color: #5f5e5e;
+    }
+    15%{
+      background-color: #5f5e5ee3;
+    }
+    25%{
+      background-color: #797777;
+    }
+    50%{
+      background-color: #afaeae;
+    }
+    75%{
+      background-color: #797777;
+    }
+    85%{
+      background-color: #5f5e5ee3;
+    }
+    100%{
+      background-color: #5f5e5e;
+    }
+  }
+
+  @keyframes wifi-animation3{
+    0%{
+      background-color: #5f5e5e;
+    }
+    25%{
+      background-color: #5f5e5ecb;
+    }
+    35%{
+      background-color: #8581818a;
+    }
+    50%{
+      background-color: #afaeae;
+    }
+    60%{
+      background-color: #8581818a;
+    }
+    75%{
+      background-color: #5f5e5ecb;
+    }
+    100%{
+      background-color: #5f5e5e;
+    }
+  }
